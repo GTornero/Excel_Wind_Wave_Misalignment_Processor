@@ -127,7 +127,7 @@ with open(path, 'r') as f:
 
 
     for windSector in range(1, 13):
-        outSheet = outWorkbook.add_worksheet("Wind Sector " + str(windSector))
+        outSheet = outWorkbook.add_worksheet("Wind Sector #" + str(windSector))
         for waveSector in range(1, 13):
             outSheet.write(2, 2 + ((waveSector - 1) * (len(tableCols) + 2)), "Wave Sector" + str(waveSector))
             i = 0
